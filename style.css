@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4E5150;;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+/* header */
+ header {
+  margin: 2em auto;
+ }
+
+.profile * {
+  margin: 0;
+}
+
+.profile {
+  margin-bottom: 1em;
+}
+
+.profile img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15em;
+  border-radius: 1.2em;
+}
+
+.profile h1 {
+  font-size: 1.9em;
+  line-height: 2.1em;
+}
+
+.profile p {
+  color: #A9A9A9;
+  line-height: 1.3em;
+}
+
+.stat {
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1em;
+}
+
+.card {
+  padding: 1em 2em;
+  display: inline-block;
+  background-color: #E5E5E5;
+  border-radius: 0.8em;
+}
+
+.number {
+  font-size: 1.3em;
+  color: #4E5150;
+}
+
+.item {
+  color: #BDBDBD;
+}
+
+.gallery {
+  display: grid;
+  width: 100%;
+  height: 50%;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  column-gap: 1.5em;
+  row-gap: 1.5em;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.8em;
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.15));
+}
+
+.photo1 {
+  grid-row: 1 / span 4;
+  grid-column: 1 / span 4;
+}
+
+.photo2 {
+  grid-row: 1 / span 4;
+  grid-column: 5 / span 8;
+}
+
+.photo3 {
+  grid-row: 5 / span 4;
+  grid-column: 1 / span 8;
+}
+
+.photo4 {
+  grid-row: 5 / span 8;
+  grid-column: 9 / span 4;
+}
+
+.photo5 {
+  grid-row: 9 / span 4;
+  grid-column: 5 / span 4;
+}
+
+.photo6 {
+  grid-row: 9 / span 4;
+  grid-column: 1 / span 4;
+}
+
+footer {
+  margin-top: 2em;
+  font-weight: 500;
+  line-height: 1.3em;
+  color: #B9BDCF;
+}
+
+footer a {
+  font-weight: 700;
+  color: #B9BDCF;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 10px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .profile img {
+    width: 10em;
+  }
+
+  .profile h1 {
+    font-size: 1.4em;
+    line-height: 2.1em;
+  }
+
+  .stat {
+    width: 100%;
+  }
+
+  .card {
+    margin: 0 1em;
+    padding: 1em 2em;
+    display: inline-block;
+    background-color: #E5E5E5;
+    border-radius: 0.8em;
+  }
+
+  footer {
+    font-size: 1.4em;
+  }
+}
